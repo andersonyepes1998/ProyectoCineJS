@@ -26,6 +26,8 @@ let persona = {
 console.log(persona.materiasDictadas[1]);
 */
 
+const container = document.querySelector('.container mt-5');
+const pelicula = [];
 let peliculas=[
     {
         nombre:"DC Liga De SúperMascotas",
@@ -46,12 +48,12 @@ let peliculas=[
         idioma: "En subtitulado"
     },
     {
-        nombre:"Telefono negro",
-        genero:"Suspenso",
-        duracion:150,
+        nombre:"El Teléfono Negro",
+        genero:"Terror",
+        duracion:107,
         poster:"https://firebasestorage.googleapis.com/v0/b/cineayb.appspot.com/o/pelicula3.png?alt=media&token=a7b3972c-c154-470d-8d86-0d3df1df90d9",
-        sinopsis:"",
-        clasificacion:"+18",
+        sinopsis:"Finney Shaw es un niño tímido pero inteligente de 13 años que es secuestrado y atrapado en un sótano insonorizado por un asesino sádico. Cuando un teléfono desconectado en la pared comienza a sonar, Finney descubre que puede escuchar las voces de las víctimas anteriores del asesino. Y están decididos a asegurarse de que lo que les pasó a ellos no le pase a Finney.",
+        clasificacion:"+15",
         idioma: "En subtitulado"
     },
     {
@@ -90,9 +92,33 @@ let peliculas=[
         clasificacion:"general",
         idioma: "En subtitulado"
     },
-    {},
-    {},
-    {}
+    {
+        nombre:"Todo en Todas Partes al Mismo Tiempo",
+        genero:"Aventura",
+        duracion:139,
+        poster:"https://firebasestorage.googleapis.com/v0/b/cineayb.appspot.com/o/pelicual8.jpg?alt=media&token=9209d2f9-19fc-4578-85a3-8df4daa50139",
+        sinopsis:"Con su lavandería al borde del fracaso y su matrimonio con el debilucho esposo Waymond en las rocas, Evelyn Wang, con exceso de trabajo, lucha por hacer frente a todo, incluida una relación hecha jirones con su padre crítico Gong Gong y Joy, su hija. Y, como si enfrentarse a una lúgubre crisis de la mediana edad no fuera suficiente, Evelyn debe prepararse para una reunión desagradable con un burócrata impersonal: Deirdre, la auditora del IRS mal vestida.",
+        clasificacion:"+12",
+        idioma: "Es subtitulado"
+    },
+    {
+        nombre:"Minions 2: Nace un Villano",
+        genero:"Acción, Comedia",
+        duracion:87,
+        poster:"https://firebasestorage.googleapis.com/v0/b/cineayb.appspot.com/o/Pelicula%209.jpg?alt=media&token=739ff7d0-f079-4d42-b5f4-be1ba0c1c37e",
+        sinopsis:"En el corazón de los años 70´s, un Gru de 12 años crece en los suburbios. Fan de los supervillanos Vicious 6, Gru decide que quiere ser tan malvado como ellos para unírseles. Con ayuda de sus secuaces, los Minions, construye su primera guarida, usa sus primeras armas y cumple sus primeras misiones.",
+        clasificacion:"En general",
+        idioma: "En subtitulado"
+    },
+    {
+        nombre:"Un Parcero en Nueva York",
+        genero:"Comedia",
+        duracion:90,
+        poster:"https://firebasestorage.googleapis.com/v0/b/cineayb.appspot.com/o/Pelicula%2010.png?alt=media&token=82dc19e7-45d0-4a8d-a1e5-d4641d44c2b5",
+        sinopsis:"Armando Pulido, un maestro de obra sencillo de buen corazón, trabajador, rebuscador y buen amigo, cansado de la grave crisis económica que vive en Colombia, decide irse a buscar el sueño americano a Nueva York, para esto intentan diversas formas de conseguir la visa americana hasta que lo logra de la manera menos pensada posible, al llegar a la gran manzana el hombre se ve enfrentado a rebuscársela con todo el ingenio. Al final logrará su sueño americano, pero le hará falta todo lo maravilloso que tenía en Colombia.",
+        clasificacion:"En general",
+        idioma: "Es"
+    }
 ]
 
 
@@ -100,8 +126,9 @@ let peliculas=[
 
 
 //es un metodo para recorrer solo arreglos
+/*
 peliculas.forEach(function(pelicula){
-    //console.log(pelicula);
+   
     console.log(pelicula.nombre);
     console.log(pelicula.genero);
     console.log(pelicula.duracion);
@@ -109,4 +136,43 @@ peliculas.forEach(function(pelicula){
     console.log(pelicula.sinopsis);
     console.log(pelicula.clasificacion);
     console.log(pelicula.idioma);
-})
+   */
+  for(peliculas of pelicula){
+
+
+    const rowjustify = document.createElement('div');
+    rowjustify.classList.add('row justify-content-center');
+
+    const col4 = document.createElement('div');
+    col4.classList.add('col-4');
+
+    const cardShadow = document.createElement('div');
+    cardShadow.classList.add('card shadow');
+
+    const img = document.createElement('img');
+    img.setAttribute('src', pelicula.poster);
+
+    const cardBody = document.createElement('div');
+    cardBody.classList.add('card-body');
+
+    const peliculanombre = document.createElement('h1');
+    peliculanombre.innerText = pelicula.nombre;
+
+    const peliculaSinopsis = document.createElement('p');
+    peliculaSinopsis.innerText = pelicula.sinopsis;
+
+
+    cardBody.appendChild(peliculanombre);
+    cardBody.appendChild(peliculaSinopsis);
+
+    cardShadow.appendChild(img);
+    cardShadow.appendChild(cardBody)
+
+    col4.appendChild(cardShadow);
+    rowjustify.appendChild(col4);
+
+    container.appendChild(rowjustify);
+
+  }
+  
+//})
