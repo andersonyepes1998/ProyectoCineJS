@@ -25,9 +25,10 @@ let persona = {
 }
 console.log(persona.materiasDictadas[1]);
 */
-
+/*
 const container = document.querySelector('.container mt-5');
 const pelicula = [];
+*/
 let peliculas=[
     {
         nombre:"DC Liga De SúperMascotas",
@@ -126,7 +127,9 @@ let peliculas=[
 
 
 //es un metodo para recorrer solo arreglos
-/*
+
+let fila=document.getElementById('fila');
+
 peliculas.forEach(function(pelicula){
    
     console.log(pelicula.nombre);
@@ -136,7 +139,64 @@ peliculas.forEach(function(pelicula){
     console.log(pelicula.sinopsis);
     console.log(pelicula.clasificacion);
     console.log(pelicula.idioma);
-   */
+
+    //TRAVERSING (CREAR ETIQUETAS DESDE HTML DESDE JS)
+    //1. Creamos una columna para cada variable.
+
+    let columna=document.createElement('div');
+    columna.classList.add('col');
+
+    let tarjeta=document.createElement('div');
+    tarjeta.classList.add('card','h-100');
+
+    //foto para cada pelicula
+
+    let poster=document.createElement('img');
+    poster.classList.add('card-img-top');
+    poster.src=pelicula.poster;
+
+    let nombrePelicula=document.createElement('h3');
+    nombrePelicula.classList.add('Card-title','text-center');
+    nombrePelicula.textContent=pelicula.nombre;
+
+    let generoPelicula=document.createElement('h4');
+    generoPelicula.classList.add('card-text');
+    generoPelicula.textContent="Genero: "+pelicula.genero;
+
+    let idioma = document.createElement('h6');
+    idioma.classList.add('fw-bold');
+    idioma.innerText=pelicula.idioma;
+
+    let sinopsis = document.createElement('p');
+    sinopsis.classList.add('d-none');
+    sinopsis.textContent=pelicula.sinopsis;
+    //padres e hijos
+
+    tarjeta.appendChild(poster);
+    tarjeta.appendChild(nombrePelicula);
+    tarjeta.appendChild(generoPelicula)
+    tarjeta.appendChild(idioma);
+    tarjeta.appendChild(sinopsis);
+
+
+    columna.appendChild(tarjeta);
+    fila.appendChild(columna);
+})
+
+//DETETANDO SELECCION DE UNA PELICULA
+fila.addEventListener('click',function(){
+    alert('Estas seleccionando una pelicula');
+})
+
+
+
+
+
+
+
+
+
+/*
   for(peliculas of pelicula){
 
 
@@ -173,6 +233,4 @@ peliculas.forEach(function(pelicula){
 
     container.appendChild(rowjustify);
 
-  }
-  
-//})
+  }*/
