@@ -31,7 +31,6 @@
 .nav-item:hover{
     cursor: pointer;
     background-color: rgb(27, 27, 254);
-    
 }
 
 .banner{
@@ -55,6 +54,10 @@
 .card-img-top{
     border-radius: 5px;
     margin-bottom: 10px;
+}
+
+.card-img-top:hover{
+    transform: scale(1.02,1.02);
 }
 
 .text{
