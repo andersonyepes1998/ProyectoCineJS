@@ -1,3 +1,39 @@
+
+.navbar{
+    background-color: black;
+    height: 90px;
+}
+
+.container-fluid{
+    margin: 0 85px 0 ;
+}
+
+.cine, img{
+    width: 200px;
+    cursor: pointer;
+}
+
+
+#navbarSupportedContent{
+    margin: 0 0 0 7%;
+}
+
+#navbar-nav li {
+    margin: 0 2%;
+}
+
+.nav-item{
+    padding: 0 7px 0 7px;
+    background-color: #0076ff;
+    border-radius: 13px;
+}
+
+.nav-item:hover{
+    cursor: pointer;
+    background-color: rgb(27, 27, 254);
+    
+}
+
 .banner{
     background-image: url('../img/banner3.jpg');
     padding: 10% 30% 45% 20%;
@@ -5,13 +41,54 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.card{
+    padding: 15px;
+    border: none;
+    
+}
+
 .Card-title{
-    color: red;
+    color: black;
+}
+
+.card-img-top{
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.text{
+    font-size: 12px;
+    background-color: #ebe5e5;
+    padding: 5px;
+    text-align: center;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+.text2{
+    width: 24%;
+    font-size: 12px;
+    background-color: #ebe5e5;
+    padding: 5px;
+    text-align: center;
+    border-radius: 3px;
+    font-weight: bold;
 }
 
 .title{
-    color: red;
+    color: black;
+    font-weight: bold;
     text-align: center;
-    margin: 50px 0 50px 0;
+    margin: 30px 0 30px 0;
     border-bottom: 1px solid rgb(209, 209, 209);
 }
+
+.imagenFother{
+    margin-left: 90px;
+}
+
+footer{
+    margin-top: 20px;
+}
+
