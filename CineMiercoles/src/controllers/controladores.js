@@ -57,7 +57,6 @@ fila.addEventListener('click',function(evento){
     //llamando a la memoria del navegador
     localStorage.setItem("peliculaSeleccionada",JSON.stringify(peliculaSeleccionada))
 
-    
     window.location.href="./src/views/ampliarInfoPelicula.html";
 
 })
