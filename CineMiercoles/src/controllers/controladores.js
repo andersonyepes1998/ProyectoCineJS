@@ -51,6 +51,8 @@ fila.addEventListener('click',function(evento){
     peliculaSeleccionada.idioma=(evento.target.parentElement.querySelector('h3').textContent);//idioma
     peliculaSeleccionada.clasificacion=(evento.target.parentElement.querySelector('p').textContent);//clasificacion
     peliculaSeleccionada.director=(evento.target.parentElement.querySelector('h7').textContent);//director
+    peliculaSeleccionada.sinopsis=(evento.target.parentElement.querySelector('.informacion').textContent);//director
+    peliculaSeleccionada.actor=(evento.target.parentElement.querySelector('.actores').textContent);//director
 
     console.log(peliculaSeleccionada);
 

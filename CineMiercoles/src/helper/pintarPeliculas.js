@@ -44,12 +44,14 @@ export function pintarPeliculas(peliculas){
         director.classList.add('d-none');
         director.innerText= "Director: " +pelicula.Director;
     
-        let actor = document.createElement('h7');
+        let actor = document.createElement('p');
+        actor.classList.add('actores')
         actor.classList.add('fw-bold','text-center');
         actor.classList.add('d-none');
         actor.innerText= "ACTORES: " +pelicula.Actores;
     
         let sinopsis = document.createElement('p');
+        sinopsis.classList.add('informacion');
         sinopsis.classList.add('d-none');
         sinopsis.textContent=pelicula.sinopsis;
         //padres e hijos
