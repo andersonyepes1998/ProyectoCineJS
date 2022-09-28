@@ -8,7 +8,9 @@ export let peliculas=[
         clasificacion:"publico en general",
         idioma: "En subtitulado",
         Director: "Jared Stern",
-        Actores:["Kate McKinnon ", "Dwayne Johnson ", "Kevin Hart. "] 
+        Actores:["Kate McKinnon ", "Dwayne Johnson ", "Kevin Hart. "],
+        Banner:"https://firebasestorage.googleapis.com/v0/b/cineayb.appspot.com/o/BannerMascotas-01.png?alt=media&token=b61f8ede-f372-4686-a22d-37241a98df75",
+        Estreno:"29-sept-2022"
     },
     {
         nombre:"Thor: Amor y Trueno",
@@ -19,7 +21,9 @@ export let peliculas=[
         clasificacion:"mayores de 12 años",
         idioma: "En subtitulado",
         Director: "Anderson yepes ",
-        Actores: "Chris Hemsworth, Natalie Portman, Taika Waititi"
+        Actores: "Chris Hemsworth, Natalie Portman, Taika Waititi",
+        Banner:"https://firebasestorage.googleapis.com/v0/b/cineayb.appspot.com/o/banner%20thor.jpg?alt=media&token=a2ecb5a2-f140-452f-97e2-69abbdad4805",
+        Estreno:"06-oct-2022"
     },
     {
         nombre:"El Teléfono Negro",
@@ -30,7 +34,8 @@ export let peliculas=[
         clasificacion:"mayores de 15 años",
         idioma: "En subtitulado",
         Director: "Anderson yepes ",
-        Actores: "Chris Hemsworth, Natalie Portman, Christian Bale"
+        Actores: "Chris Hemsworth, Natalie Portman, Christian Bale",
+        Estreno:"12-oct-2022"
     },
     {
         nombre:"La Chica Salvaje",
@@ -41,7 +46,8 @@ export let peliculas=[
         clasificacion:"mayores de 12 años",
         idioma: "Es subtitulado",
         Director: "Valeria Moncada ",
-        Actores: "Austin Butler, Tom Hanks, Dacre Montgomery"
+        Actores: "Austin Butler, Tom Hanks, Dacre Montgomery",
+        Estreno:"20-oct-2022"
     },
     {
         nombre:"Apocalypsis Zombie",
@@ -52,7 +58,8 @@ export let peliculas=[
         clasificacion:"mayores de 18 años",
         idioma: "En subtitulado",
         Director: "Euclidez Perez ",
-        Actores: "Oris Erhuero, Mark Strange, Martyn Ford"
+        Actores: "Oris Erhuero, Mark Strange, Martyn Ford",
+        Estreno:"29-oct-2022"
     },
     {
         nombre:"El Perro Samurai: La Leyenda de Kakamucho",
@@ -63,7 +70,8 @@ export let peliculas=[
         clasificacion:"publico en general",
         idioma: "Es subtitulado",
         Director: "Andres mercado",
-        Actores: "Samuel L. Jackson, Michael Cera, Mel Brooks"
+        Actores: "Samuel L. Jackson, Michael Cera, Mel Brooks",
+        Estreno:"17-oct-2022"
     },
     {
         nombre:"Tren Bala",
@@ -74,7 +82,8 @@ export let peliculas=[
         clasificacion:"publico en general",
         idioma: "En subtitulado",
         Director: "Mathias yepes",
-        Actores: "Brad Pitt, Joey King, David Leitch"
+        Actores: "Brad Pitt, Joey King, David Leitch",
+        Estreno:"01-oct-2022"
     },
     {
         nombre:"Todo en Todas Partes al Mismo Tiempo",
@@ -85,7 +94,8 @@ export let peliculas=[
         clasificacion:"mayores de 12 años",
         idioma: "Es subtitulado",
         Director: "Johana Hernandez",
-        Actores: "Michelle Yeoh, Stephanie Hsu, Dan Kwan"
+        Actores: "Michelle Yeoh, Stephanie Hsu, Dan Kwan",
+        Estreno:"06-oct-2022"
     },
     {
         nombre:"Minions 2: Nace un Villano",
@@ -96,7 +106,8 @@ export let peliculas=[
         clasificacion:"publico en general",
         idioma: "En subtitulado",
         Director: "Daniela gutierrez",
-        Actores: "Julie Andrews, Russell Brand, Michelle Yeoh"
+        Actores: "Julie Andrews, Russell Brand, Michelle Yeoh",
+        Estreno:"12-oct-2022"
     },
     {
         nombre:"Un Parcero en Nueva York",
@@ -107,7 +118,8 @@ export let peliculas=[
         clasificacion:"publico en general",
         idioma: "Es Subtitulada",
         Director: "Claudia Henao",
-        Actores: "Carlos Hurtado Beltrán, Harold Trompetero,  Bayardo Ardila"
+        Actores: "Carlos Hurtado Beltrán, Harold Trompetero,  Bayardo Ardila",
+        Estreno:"02-oct-2022"
     },
     {
         nombre:"Vértigo",
@@ -118,7 +130,8 @@ export let peliculas=[
         clasificacion:"mayores de 12 años",
         idioma: "Es Subtitulada",
         Director: "Claudia Henao",
-        Actores: "Carlos Hurtado Beltrán, Harold Trompetero,  Bayardo Ardila"
+        Actores: "Carlos Hurtado Beltrán, Harold Trompetero,  Bayardo Ardila",
+        Estreno:"30-oct-2022"
     },
     {
         nombre:"Cacería de Brujas",
@@ -129,6 +142,7 @@ export let peliculas=[
         clasificacion:"mayores de 12 años",
         idioma: "Es Subtitulada",
         Director: "Claudia Henao",
-        Actores: "Carlos Hurtado Beltrán, Harold Trompetero,  Bayardo Ardila"
+        Actores: "Carlos Hurtado Beltrán, Harold Trompetero,  Bayardo Ardila",
+        Estreno:"26-oct-2022"
     }
 ]

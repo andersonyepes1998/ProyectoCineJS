@@ -26,10 +26,16 @@ export function pintarPeliculas(peliculas){
     
         let generoPelicula=document.createElement('h6');
         generoPelicula.classList.add('card-text');
-        generoPelicula.textContent="Genero: "+pelicula.genero;
+        generoPelicula.classList.add('d-none');
+        generoPelicula.textContent=pelicula.genero;
     
-        let idioma = document.createElement('h3');
+        let idioma = document.createElement('p');
+        idioma.classList.add('idiomas');
         idioma.innerText= "Idioma: "+pelicula.idioma;
+
+        let Estreno = document.createElement('p');
+        Estreno.classList.add('estrenos');
+        Estreno.innerText="Estreno: " +pelicula.Estreno;
     
         let clasificacion = document.createElement('p');
         clasificacion.classList.add('text');
@@ -42,24 +48,30 @@ export function pintarPeliculas(peliculas){
         let director = document.createElement('h7');
         director.classList.add('fw-bold');
         director.classList.add('d-none');
-        director.innerText= "Director: " +pelicula.Director;
+        director.innerText=pelicula.Director;
     
         let actor = document.createElement('p');
         actor.classList.add('actores')
         actor.classList.add('fw-bold','text-center');
         actor.classList.add('d-none');
-        actor.innerText= "ACTORES: " +pelicula.Actores;
+        actor.innerText=pelicula.Actores;
     
         let sinopsis = document.createElement('p');
         sinopsis.classList.add('informacion');
         sinopsis.classList.add('d-none');
         sinopsis.textContent=pelicula.sinopsis;
+
+        let banner = document.createElement('img');
+        banner.classList.add('d-none');
+        banner.classList.add('banner2');
+        banner.src = pelicula.banner;
         //padres e hijos
     
         tarjeta.appendChild(poster);
         tarjeta.appendChild(nombrePelicula);
         tarjeta.appendChild(generoPelicula);
         tarjeta.appendChild(idioma);
+        tarjeta.appendChild(Estreno);
         tarjeta.appendChild(clasificacion);
         tarjeta.appendChild(duracion);
         tarjeta.appendChild(director);

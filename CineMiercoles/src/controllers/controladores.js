@@ -48,11 +48,12 @@ fila.addEventListener('click',function(evento){
     peliculaSeleccionada.poster=(evento.target.parentElement.querySelector('img').src);
     peliculaSeleccionada.nombre=(evento.target.parentElement.querySelector('h5').textContent);//nombre de pelicula
     peliculaSeleccionada.genero=(evento.target.parentElement.querySelector('h6').textContent);//genero
-    peliculaSeleccionada.idioma=(evento.target.parentElement.querySelector('h3').textContent);//idioma
+    peliculaSeleccionada.idioma=(evento.target.parentElement.querySelector('.idiomas').textContent);//idioma
     peliculaSeleccionada.clasificacion=(evento.target.parentElement.querySelector('p').textContent);//clasificacion
     peliculaSeleccionada.director=(evento.target.parentElement.querySelector('h7').textContent);//director
     peliculaSeleccionada.sinopsis=(evento.target.parentElement.querySelector('.informacion').textContent);//director
     peliculaSeleccionada.actor=(evento.target.parentElement.querySelector('.actores').textContent);//director
+    //peliculaSeleccionada.banner=(evento.target.parentElement.querySelector('.banner2').src);//banner
 
     console.log(peliculaSeleccionada);
 

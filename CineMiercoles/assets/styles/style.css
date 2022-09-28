@@ -104,7 +104,53 @@ footer{
 
 
 /* stylos views*/
-#contenedor{
-    margin-top: 10%;
+
+.banner2{
+    background-image: url('../img/BannerMascotas-01.png');
+    padding: 10% 30% 45% 20%;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 20px;
+
 }
 
+#contenedor{
+    position: relative;
+    margin-top: 5%;
+}
+
+#foto{
+    border-radius: 5px;
+    box-shadow: 20px -15px black;
+}
+.butonInfo{
+    width: 70px;
+    height: 70px;
+    margin-right: 5px;
+}
+.butonInfo p{
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid rgb(199, 199, 199);
+}
+.butonInfo p:nth-child(1){
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/*stylos a cinema*/
+
+.bloque{
+    margin: 0 auto;
+    background-color: black;
+    width: 70%;
+    height: 75px;
+    border-radius: 5px 5px 0 0;
+    text-align: center;
+    padding: 20px;
+}
+.bloque h3{
+    color: white;
+    font-weight: bold;
+}
