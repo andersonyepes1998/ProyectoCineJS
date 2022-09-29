@@ -12,7 +12,7 @@ let sinopsis=datospeliculaseleccionada.sinopsis;
 let actor=datospeliculaseleccionada.actor;
 let banner=datospeliculaseleccionada.banner;
 
-
+console.log(banner);
 
 //cargando datos
 let foto = document.getElementById('foto');
@@ -33,5 +33,5 @@ jefe.innerText=director;
 let personaje = document.getElementById('personaje');
 personaje.textContent=actor;
 
-let bannerImg = document.querySelector('.banner2');
+let bannerImg = document.getElementById('banner2');
 bannerImg.src=banner;

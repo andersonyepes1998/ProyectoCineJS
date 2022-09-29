@@ -64,7 +64,7 @@ export function pintarPeliculas(peliculas){
         let banner = document.createElement('img');
         banner.classList.add('d-none');
         banner.classList.add('banner2');
-        banner.src = pelicula.banner;
+        banner.src = pelicula.Banner;
         //padres e hijos
     
         tarjeta.appendChild(poster);
@@ -77,6 +77,7 @@ export function pintarPeliculas(peliculas){
         tarjeta.appendChild(director);
         tarjeta.appendChild(sinopsis);
         tarjeta.appendChild(actor);
+        tarjeta.appendChild(banner);
     
     
         columna.appendChild(tarjeta);

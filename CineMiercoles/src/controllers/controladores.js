@@ -53,7 +53,7 @@ fila.addEventListener('click',function(evento){
     peliculaSeleccionada.director=(evento.target.parentElement.querySelector('h7').textContent);//director
     peliculaSeleccionada.sinopsis=(evento.target.parentElement.querySelector('.informacion').textContent);//director
     peliculaSeleccionada.actor=(evento.target.parentElement.querySelector('.actores').textContent);//director
-    //peliculaSeleccionada.banner=(evento.target.parentElement.querySelector('.banner2').src);//banner
+    peliculaSeleccionada.banner=(evento.target.parentElement.querySelector('.banner2').src);//banner
 
     console.log(peliculaSeleccionada);
 

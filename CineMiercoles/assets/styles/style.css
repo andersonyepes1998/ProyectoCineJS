@@ -142,15 +142,18 @@ footer{
 /*stylos a cinema*/
 
 .bloque{
-    margin: 0 auto;
+    margin:  0 auto;
+    display: flex;
     background-color: black;
     width: 70%;
-    height: 75px;
+    height: 300px;
     border-radius: 5px 5px 0 0;
     text-align: center;
-    padding: 20px;
+    justify-content: center;
 }
 .bloque h3{
     color: white;
     font-weight: bold;
+    margin-top: auto;
+    margin-bottom: auto;
 }
