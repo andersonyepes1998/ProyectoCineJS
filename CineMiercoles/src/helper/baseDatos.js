@@ -35,6 +35,7 @@ export let peliculas=[
         idioma: "En subtitulado",
         Director: "Anderson yepes ",
         Actores: "Chris Hemsworth, Natalie Portman, Christian Bale",
+        Banner:"https://firebasestorage.googleapis.com/v0/b/cineayb.appspot.com/o/banner%20telefono.jpg?alt=media&token=fdd1a909-6b7c-4371-9a4c-754b3f966a76",
         Estreno:"12-oct-2022"
     },
     {
@@ -47,6 +48,7 @@ export let peliculas=[
         idioma: "Es subtitulado",
         Director: "Valeria Moncada ",
         Actores: "Austin Butler, Tom Hanks, Dacre Montgomery",
+        Banner:"https://firebasestorage.googleapis.com/v0/b/cineayb.appspot.com/o/banner%20chica%20salvaje.jpg?alt=media&token=4273d1a9-01a9-4679-9193-3d3f1d4b8778",
         Estreno:"20-oct-2022"
     },
     {
@@ -59,6 +61,7 @@ export let peliculas=[
         idioma: "En subtitulado",
         Director: "Euclidez Perez ",
         Actores: "Oris Erhuero, Mark Strange, Martyn Ford",
+        Banner:"https://firebasestorage.googleapis.com/v0/b/cineayb.appspot.com/o/banner%20de%20zombie.jpg?alt=media&token=c525b6af-ea0d-408d-8d63-d61b319f6dbf",
         Estreno:"29-oct-2022"
     },
     {
@@ -71,6 +74,7 @@ export let peliculas=[
         idioma: "Es subtitulado",
         Director: "Andres mercado",
         Actores: "Samuel L. Jackson, Michael Cera, Mel Brooks",
+        Banner:"https://firebasestorage.googleapis.com/v0/b/cineayb.appspot.com/o/banner%20samurai.jpg?alt=media&token=08d7b619-0674-498a-842d-8e00d2559d31",
         Estreno:"17-oct-2022"
     },
     {
@@ -83,6 +87,7 @@ export let peliculas=[
         idioma: "En subtitulado",
         Director: "Mathias yepes",
         Actores: "Brad Pitt, Joey King, David Leitch",
+        Banner:"https://firebasestorage.googleapis.com/v0/b/cineayb.appspot.com/o/banner%20de%20tren%20bala.jpg?alt=media&token=b3cd0b63-9f9e-4ed9-a783-a5e90348cf77",
         Estreno:"01-oct-2022"
     },
     {
@@ -95,6 +100,7 @@ export let peliculas=[
         idioma: "Es subtitulado",
         Director: "Johana Hernandez",
         Actores: "Michelle Yeoh, Stephanie Hsu, Dan Kwan",
+        Banner:"https://firebasestorage.googleapis.com/v0/b/cineayb.appspot.com/o/banner%20todo%20en%20todas%20partes.jpg?alt=media&token=0df62131-616a-4a53-9a44-7cb6bf39a861",
         Estreno:"06-oct-2022"
     },
     {
@@ -107,6 +113,7 @@ export let peliculas=[
         idioma: "En subtitulado",
         Director: "Daniela gutierrez",
         Actores: "Julie Andrews, Russell Brand, Michelle Yeoh",
+        Banner:"https://firebasestorage.googleapis.com/v0/b/cineayb.appspot.com/o/banner%20minnios.png?alt=media&token=db3ec71c-ef31-4e09-ba8e-3760a6a70293",
         Estreno:"12-oct-2022"
     },
     {
@@ -119,6 +126,7 @@ export let peliculas=[
         idioma: "Es Subtitulada",
         Director: "Claudia Henao",
         Actores: "Carlos Hurtado Beltrán, Harold Trompetero,  Bayardo Ardila",
+        Banner:"https://firebasestorage.googleapis.com/v0/b/cineayb.appspot.com/o/banner%20parcero.jpg?alt=media&token=5d8a184a-4a0a-4186-a4ad-c4cb0309c6dd",
         Estreno:"02-oct-2022"
     },
     {
@@ -131,6 +139,7 @@ export let peliculas=[
         idioma: "Es Subtitulada",
         Director: "Claudia Henao",
         Actores: "Carlos Hurtado Beltrán, Harold Trompetero,  Bayardo Ardila",
+        Banner:"https://firebasestorage.googleapis.com/v0/b/cineayb.appspot.com/o/banner%20vertigo.jpg?alt=media&token=74d3a74a-d63e-4c8c-a861-c1ccfdc49764",
         Estreno:"30-oct-2022"
     },
     {
@@ -143,6 +152,7 @@ export let peliculas=[
         idioma: "Es Subtitulada",
         Director: "Claudia Henao",
         Actores: "Carlos Hurtado Beltrán, Harold Trompetero,  Bayardo Ardila",
+        Banner:"https://firebasestorage.googleapis.com/v0/b/cineayb.appspot.com/o/banner%20cacerias.jpg?alt=media&token=4cd57570-bdd8-4058-8419-01289b829bd1",
         Estreno:"26-oct-2022"
     }
 ]
