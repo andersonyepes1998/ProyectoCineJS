@@ -1,4 +1,8 @@
 
+.inactive{
+    display: none;
+}
+
 .navbar{
     background-color: black;
     height: 90px;
@@ -201,15 +205,71 @@ footer{
 
 /*stylos a cinema*/
 
+.factura{
+    position: absolute;
+    width: 600px;
+    height: 500px;
+    /* display: none; */
+}
+.reserva{
+    display: flex;
+    width: 340px;
+    padding: 10px 10px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    justify-content: center;
+    border-radius: 5px;
+    margin: 15px auto 20px auto;
+}
+.info-voleta{
+    width: 340px;
+    height: 65%;
+    margin: 0 auto;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.418);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.784), #000);
+}
+.logo-cine{
+    width: 100%;
+    height: 120px;
+    padding: 10px;
+}
+.texts-voleta{
+    margin-top: 25px ;
+    color: black;
+}
+.congratulation{
+    margin-top: 10px;
+    color: rgb(201, 201, 233);
+    padding: 10px;
+    text-align: center;
+}
+.logo-img{
+    width: 100%;
+    height: 100%;
+}
+label{
+    color: white;
+}
+.info-voleta:hover{
+    background-color: aqua;
+    transition: 1s;
+}
 .bloque{
     margin:  0 auto;
     display: flex;
     background-color: black;
     width: 70%;
-    height: 300px;
+    height: 150px;
     border-radius: 5px 5px 0 0;
     text-align: center;
     justify-content: center;
+    margin-top: 50px;
+    position: relative;
 }
 .bloque h3{
     color: white;

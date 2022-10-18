@@ -7,7 +7,7 @@
     <title>Document</title>
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <link rel="stylesheet" href="/CineMiercoles/assets/styles/style.css">
+    <link rel="stylesheet" href="/assets/styles/style.css">
 </head>
 <body>
     
@@ -22,11 +22,26 @@
                         
                     </div>
                     <div class="col-12 col-md-6 border-start border-5 ">
-                        <h3>Tu Reserva</h3>
+                        <section class="factura">
+                            <h3 class="reserva">Tu reserva</h3>
+                            <div class="info-voleta">
+                                <div class="logo-cine">
+                                    <img src="/cine_colombia-01.svg" alt="" class="logo-img">
+                                </div>
+                                <div class="texts-voleta">
+                                    <h4>Total Acientos</h4>
+                                    <label for="" id="cantidadyValor">0</label>
+                                    <h4>Valor a Pagar</h4>
+                                    <label for="" id="precio">0</label>
+    
+                                    <h5 class="congratulation">Gracias por preferirnos</h5>
+                                </div>
+                            </div>  
+                        </section>
                     </div>
                     
                 </div>
-                <a href="/CineMiercoles/" type="button" class="btn btn-info mt-5" id="validar">Validar Reserva</a>
+                <a type="button" class="btn btn-info mt-5" id="validar">Validar Reserva</a>
             </div>
 
         </div>

@@ -12,6 +12,13 @@ let cinema = document.getElementById('salaCinema');
 
 pintarasientos(asientos,cinema);
 
+
+let cantidadyValor = document.getElementById('cantidadyValor');
+let precio = document.getElementById('precio');
+let contador = 0;
+
+let validar = document.getElementById('validar');
+
 //Evento click
 
 cinema.addEventListener('click',function(evento){
@@ -22,7 +29,7 @@ cinema.addEventListener('click',function(evento){
             hilera.forEach(function(asiento){
                 if(asiento.id==idasientoseleccionado){
 
-                    //ENCONTRE EL ASIENTODONDE SE QUIERE SENTAR
+                    //ENCONTRE EL ASIENTO DONDE SE QUIERE SENTAR
                     if(asiento.estado==0){
                         asiento.estado=1
                         evento.target.src="../..//assets/img/cinema-chair-verde.png"
@@ -34,7 +41,23 @@ cinema.addEventListener('click',function(evento){
             })
         })
     }
+    validar.addEventListener('click', (a)=>{
+        if(a.target.classList.contains('btn-info')){
+            contador++
+            cantidadyValor.textContent=contador;
+            }else{
+               
+            }
+        if(a.target.classList.contains('btn-info')){
+            let cantidad;
+            cantidad = contador * 13000;
+            precio.textContent=cantidad;
+        }
+
+    })
 })
+
+
 
 
 
