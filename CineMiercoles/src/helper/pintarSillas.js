@@ -22,7 +22,6 @@ asientos.forEach(function(hilera){
                     fotoSilla.src='../../assets/img/cinema-chair-rojo.png';
                 }
 
-    
             //padres e hijos
 
             columna.appendChild(fotoSilla);

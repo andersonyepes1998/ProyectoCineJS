@@ -24,7 +24,6 @@ let validar = document.getElementById('validar');
 cinema.addEventListener('click',function(evento){
     if(evento.target.tagName=="IMG"){
         let idasientoseleccionado = evento.target.id;
-
         asientos.forEach(function(hilera){
             hilera.forEach(function(asiento){
                 if(asiento.id==idasientoseleccionado){
@@ -33,29 +32,42 @@ cinema.addEventListener('click',function(evento){
                     if(asiento.estado==0){
                         asiento.estado=1
                         evento.target.src="../..//assets/img/cinema-chair-verde.png"
+                        contador++
+                        if(asiento.estado==0){
+                            asiento.estado=2
+                            evento.target.src='../../assets/img/cinema-chair-rojo.png';
+                        }
                     }else if(asiento.estado==1){
                         asiento.estado=0
                         evento.target.src="../../assets/img/cinema-chair.png"
+                        contador--
+                        if(asiento.estado==1){
+                            asiento.estado=2
+                            evento.target.src='../../assets/img/cinema-chair-rojo.png';
+                        }
                     }
+                    
                 }
             })
         })
     }
-    validar.addEventListener('click', (a)=>{
-        if(a.target.classList.contains('btn-info')){
-            contador++
-            cantidadyValor.textContent=contador;
-            }else{
-               
-            }
-        if(a.target.classList.contains('btn-info')){
-            let cantidad;
-            cantidad = contador * 13000;
-            precio.textContent=cantidad;
-        }
-
-    })
 })
+
+validar.addEventListener('click', (a)=>{   
+    if(a.target.classList.contains('btn-info')){
+        cantidadyValor.textContent=contador;
+        }
+    if(a.target.classList.contains('btn-info')){
+        let cantidad;
+        cantidad = contador * 13000;
+        precio.textContent=cantidad;
+    }
+
+    localStorage.setItem('contador',JSON.stringify(contador));
+
+})  
+
+
 
 
 
