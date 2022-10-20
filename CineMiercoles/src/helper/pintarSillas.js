@@ -32,6 +32,8 @@ asientos.forEach(function(hilera){
     cinema.appendChild(fila);
 })
 /*
+localStorage.setItem('pintarasientos',JSON.stringify(pintarasientos));
+
 let cantidadyValor = document.getElementById('cantidadyValor');
 let contador = 0;
 

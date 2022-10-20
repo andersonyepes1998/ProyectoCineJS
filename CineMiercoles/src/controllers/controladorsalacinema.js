@@ -1,10 +1,22 @@
 import { pintarasientos } from "../helper/pintarSillas.js";
 
-let asientos = [
-    [{id:"a1",estado:2},{id:"b1",estado:0},{id:"c1",estado:2},{id:"d1",estado:0}],
-    [{id:"a2",estado:0},{id:"b2",estado:0},{id:"c2",estado:0},{id:"d2",estado:0}],
-    [{id:"a3",estado:0},{id:"b3",estado:0},{id:"c3",estado:0},{id:"d3",estado:0}]
-]
+let asientos
+let asientosenmemoria= JSON.parse(localStorage.getItem("asientos"));
+
+if(asientosenmemoria==null){
+
+    asientos=[
+        [{id:"a1",estado:0},{id:"b1",estado:0},{id:"c1",estado:0},{id:"d1",estado:0}],
+        [{id:"a2",estado:0},{id:"b2",estado:0},{id:"c2",estado:0},{id:"d2",estado:0}],
+        [{id:"a3",estado:0},{id:"b3",estado:0},{id:"c3",estado:0},{id:"d3",estado:0}]
+    ]
+
+}else{
+    asientos=asientosenmemoria
+}
+
+
+
 
 //PINTAR DESDE JS MI SALA DE CINE:
 
@@ -33,39 +45,53 @@ cinema.addEventListener('click',function(evento){
                         asiento.estado=1
                         evento.target.src="../..//assets/img/cinema-chair-verde.png"
                         contador++
-                        if(asiento.estado==0){
+
+                        validar.addEventListener("click",function(){
+                            cantidadyValor.textContent=contador
+                            let cantidad;
+                            cantidad = contador * 13000;
+                            precio.textContent=cantidad
+                            asiento.estado=2
+                            localStorage.setItem('asientos',JSON.stringify(asientos));
+
+                        })
+
+                        /*if(asiento.estado==0){
                             asiento.estado=2
                             evento.target.src='../../assets/img/cinema-chair-rojo.png';
-                        }
+                        }*/
                     }else if(asiento.estado==1){
                         asiento.estado=0
                         evento.target.src="../../assets/img/cinema-chair.png"
                         contador--
-                        if(asiento.estado==1){
+                        /*if(asiento.estado==1){
                             asiento.estado=2
                             evento.target.src='../../assets/img/cinema-chair-rojo.png';
-                        }
+                        }*/
                     }
                     
                 }
             })
+
         })
+       
     }
 })
 
-validar.addEventListener('click', (a)=>{   
+/*validar.addEventListener('click', (a)=>{   
+    console.log(asientos)
     if(a.target.classList.contains('btn-info')){
         cantidadyValor.textContent=contador;
         }
     if(a.target.classList.contains('btn-info')){
         let cantidad;
-        cantidad = contador * 13000;
+        cantidad = contador * 10;
         precio.textContent=cantidad;
     }
 
     localStorage.setItem('contador',JSON.stringify(contador));
 
-})  
+}) */ 
 
 
 
