@@ -277,3 +277,23 @@ label{
     margin-top: auto;
     margin-bottom: auto;
 }
+
+.botones{
+    margin: 0 10% 0 10%;
+}
+
+.igmchair{
+    display: flex;
+    height: 100px;
+    background-color: rgb(179, 179, 179);
+    margin-bottom: 20px;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: #000;
+}
+
+.igmchair img{
+    margin: 15px 50px 0 50px;
+    width: 70px;
+    height: 70px;
+}
