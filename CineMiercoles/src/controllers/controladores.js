@@ -65,51 +65,11 @@ fila.addEventListener('click',function(evento){
 })
 
 
-import{peliculas2} from "../helper/baseDatosNueva.js"
-
-let fila2=document.getElementById('fila2');
 
 
 
 
 
 
-/*
-  for(peliculas of pelicula){
 
-
-    const rowjustify = document.createElement('div');
-    rowjustify.classList.add('row justify-content-center');
-
-    const col4 = document.createElement('div');
-    col4.classList.add('col-4');
-
-    const cardShadow = document.createElement('div');
-    cardShadow.classList.add('card shadow');
-
-    const img = document.createElement('img');
-    img.setAttribute('src', pelicula.poster);
-
-    const cardBody = document.createElement('div');
-    cardBody.classList.add('card-body');
-
-    const peliculanombre = document.createElement('h1');
-    peliculanombre.innerText = pelicula.nombre;
-
-    const peliculaSinopsis = document.createElement('p');
-    peliculaSinopsis.innerText = pelicula.sinopsis;
-
-
-    cardBody.appendChild(peliculanombre);
-    cardBody.appendChild(peliculaSinopsis);
-
-    cardShadow.appendChild(img);
-    cardShadow.appendChild(cardBody)
-
-    col4.appendChild(cardShadow);
-    rowjustify.appendChild(col4);
-
-    container.appendChild(rowjustify);
-
-  }*/
  

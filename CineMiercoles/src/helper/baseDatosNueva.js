@@ -8,7 +8,8 @@ export let peliculas2=[
         clasificacion:"general",
         idioma: "Es subtitulado",
         Director: "Marlon moreno",
-        Actores:["Kate McKinnon ", "Dwayne Johnson ", "Kevin Hart. "] 
+        Actores:["Kate McKinnon ", "Dwayne Johnson ", "Kevin Hart. "],
+        Estreno:"26-Dic-2022" 
     },
     {
         nombre:"HACIA LA LUNA",
@@ -19,7 +20,8 @@ export let peliculas2=[
         clasificacion:"general",
         idioma: "Es subtitulado",
         Director: "Jonathan marin",
-        Actores:["linda castro ", "Danovis vanguero ", "Aida merlano. "] 
+        Actores:["linda castro ", "Danovis vanguero ", "Aida merlano."],
+        Estreno:"10-Dic-2022" 
     },
     {
         nombre:"LA CIUDAD DE LAS FIERAS",
@@ -30,7 +32,8 @@ export let peliculas2=[
         clasificacion:"general",
         idioma: "En subtitulado",
         Director: "Mario zapata",
-        Actores:["Lorena Gonzales ", "Sury marcela ", "Anibal cañas. "] 
+        Actores:["Lorena Gonzales ", "Sury marcela ", "Anibal cañas. "],
+        Estreno:"05-Dic-2022"
     },
     {
         nombre:"LA PASION SEGUN BERENICE",
@@ -41,7 +44,8 @@ export let peliculas2=[
         clasificacion:"general",
         idioma: "Es subtitulado",
         Director: "Juan Jose sepulveda",
-        Actores:["Ivan Yepes ", "Cielo posada ", "Linda ortiz. "] 
+        Actores:["Ivan Yepes ", "Cielo posada ", "Linda ortiz. "],
+        Estreno:"10-Dic-2022"
     },
     {
         nombre:"GALLO DE PELEA",
@@ -52,7 +56,8 @@ export let peliculas2=[
         clasificacion:"15 Años",
         idioma: "Es subtitulado",
         Director: "Jorge ordoñez",
-        Actores:["Mario salinas ", "Carlos slim", "Gustavo Petro. "] 
+        Actores:["Mario salinas ", "Carlos slim", "Gustavo Petro. "],
+        Estreno:"17-Dic-2022" 
     },
     {
         nombre:"ALBUM PARA LA JUVENTUD",
@@ -63,6 +68,43 @@ export let peliculas2=[
         clasificacion:"12 Años",
         idioma: "Es subtitulado",
         Director: "Andres sepulveda",
-        Actores:["Andres salinas ", "Cesar slim", "Diego pelaez. "] 
+        Actores:["Andres salinas ", "Cesar slim", "Diego pelaez. "],
+        Estreno:"29-Dic-2022"
     },
+    {
+        nombre:"LA ROYA",
+        genero:"Drama",
+        duracion:84,
+        poster:"https://firebasestorage.googleapis.com/v0/b/cineayb.appspot.com/o/pelicula12.jpg?alt=media&token=b531eb79-405a-49ce-9c40-8c4f4145a728",
+        sinopsis:"Jorge es un joven campesino quien vive en lo alto de una montaña. Todos los de su generación han emigrado a la ciudad, pero él se ha quedado para hacerse cargo de la finca cafetera que ha heredado de su padre, mientras cuida de su abuelo y tiene amoríos con su prima Rosa. Las festividades del pueblo se acercan y él espera con ansias el momento para reencontrarse con Andrea, su exnovia, a quien no ha podido olvidar a pesar del tiempo y la distancia.",
+        clasificacion:"12 Años",
+        idioma: "Español",
+        Director: "Juan Sebastián Mesa.",
+        Actores:["Juan Daniel Ortiz ", "Paula Andrea Cano", "Laura Gutierrez Ardila."], 
+        Estreno:"01-Dic-2022"
+    },
+    {
+        nombre:"Gato Con Botas 2: El Último Deseo",
+        genero:"Animación, Aventura, Comedia",
+        duracion:95,
+        poster:"https://firebasestorage.googleapis.com/v0/b/cineayb.appspot.com/o/pelicula13.png?alt=media&token=4c13c9ce-646f-4ba7-b6fe-942f6db78c25",
+        sinopsis:"Por primera vez en más de una década, DreamWorks Animation presenta una nueva aventura del universo de Shrek cuando el atrevido Gato con Botas descubre que su nueva pasión por el peligro y su desprecio por la seguridad han cobrado su precio. Gato se ha gastado ocho de sus nueve vidas, a pesar de haber perdido la cuenta en el camino.",
+        clasificacion:"12 Años",
+        idioma: "Ingles",
+        Director: "Joel Crawford.",
+        Actores:["Antonio Banderas ", "Da’Vine Joy Randolph", "Ray Winstone."],
+        Estreno:"30-Dic-2022" 
+    },
+    {
+        nombre:"MAR DE SANGRE",
+        genero:"Suspenso, Terror",
+        duracion:87,
+        poster:"https://firebasestorage.googleapis.com/v0/b/cineayb.appspot.com/o/pelicula14.png?alt=media&token=70659e61-cdaa-45b3-baff-71b5595122f4",
+        sinopsis:"Un grupo de amigos roban un par de motos acuáticas pero terminan en un terrible accidente. En el mar y con un herido, tratarán de encontrar el camino de regreso a casa y de salvarse de la amenaza de los depredadores más temidos del océano.",
+        clasificacion:" (Por Confirmar) ",
+        idioma: "Ingles",
+        Director: "James Nunn.",
+        Actores:["Holly Earl", "Jack Trueman", "Catherine Hannay","Milo McDowell."],
+        Estreno:"11-Dic-2022" 
+    }
 ]
