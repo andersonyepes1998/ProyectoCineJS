@@ -1,4 +1,4 @@
-export let pintarPeliculas3 = [
+export let peliculas3 = [
     {
         nombre:"Las Horas",
         genero:"Ópera",

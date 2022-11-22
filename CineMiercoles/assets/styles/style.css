@@ -156,11 +156,10 @@ footer{
 }
 
 #foto{
-    position: absolute;
     width: 400px;
     height: 600px;
     object-fit: cover;
-    top: 350px;
+    margin-top: -350px;
     right: 815px;
     z-index: 10px;
     border-radius: 7px;
@@ -168,7 +167,7 @@ footer{
 }
 
 .infoTexto{
-    margin-top: 50% ;
+    margin-top: 10% ;
 }
 
 #infoRight{
