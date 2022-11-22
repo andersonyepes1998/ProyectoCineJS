@@ -123,6 +123,14 @@
     border-bottom: 1px solid rgb(209, 209, 209);
 }
 
+.title3{
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    margin: 120px 0 30px 0;
+    border-bottom: 1px solid rgb(209, 209, 209);
+}
+
 .imagenFother{
     margin-left: 70px;
 }
@@ -134,7 +142,7 @@
 }
 
 footer{
-    margin-top: 20px;
+    margin-top: 100px;
 }
 
 
@@ -393,3 +401,5 @@ label{
     width: 70px;
     height: 70px;
 }
+
+/*ESTILOS ALTERNATIVOS*/

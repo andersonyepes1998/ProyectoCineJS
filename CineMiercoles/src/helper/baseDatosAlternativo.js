@@ -78,3 +78,14 @@ export let peliculas3 = [
         Estreno:"20-May-2023"
     },
 ]
+
+export let banners = [
+    {
+        titulo:"Ballet",
+        poster:"https://firebasestorage.googleapis.com/v0/b/cineayb.appspot.com/o/banner5.jpg?alt=media&token=875b440b-d097-4151-93c2-0c1b085c5e0d"
+    },
+    {
+        titulo:"Teatro",
+        poster:"https://firebasestorage.googleapis.com/v0/b/cineayb.appspot.com/o/banner7.jpg?alt=media&token=53b3d8b2-1e46-4f3d-b335-2e2c1b0ffe12"
+    },
+]
