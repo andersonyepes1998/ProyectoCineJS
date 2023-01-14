@@ -12,9 +12,9 @@ export function pintapeliculas2(peliculas2){
         let tarjeta=document.createElement('div');
         tarjeta.classList.add('card','h-100','shadow');
 
-        let poster=document.createElement('img');
-        poster.classList.add('card-img-top');
-        poster.src=pelicula.poster;
+        let imagen=document.createElement('img');
+        imagen.classList.add('card-img-top');
+        imagen.src=pelicula.poster;
 
         let nombrePelicula=document.createElement('h5');
         nombrePelicula.classList.add('Card-title','fw-bold');
@@ -36,12 +36,43 @@ export function pintapeliculas2(peliculas2){
         duracion.classList.add('text2');
         duracion.innerText= pelicula.duracion+ " Min";
 
-        tarjeta.appendChild(poster);
+        let sinopsis = document.createElement('p');
+        sinopsis.classList.add('informacion');
+        sinopsis.classList.add('d-none');
+        sinopsis.innerText=pelicula.sinopsis;
+
+        let generoPelicula=document.createElement('h6');
+        generoPelicula.classList.add('card-text');
+        generoPelicula.classList.add('d-none');
+        generoPelicula.textContent=pelicula.genero;
+
+        let director = document.createElement('h7');
+        director.classList.add('fw-bold');
+        director.classList.add('d-none');
+        director.innerText=pelicula.Director;
+
+        let actor = document.createElement('p');
+        actor.classList.add('actores')
+        actor.classList.add('fw-bold','text-center');
+        actor.classList.add('d-none');
+        actor.innerText=pelicula.Actores;
+
+        let banner = document.createElement('img');
+        banner.classList.add('d-none');
+        banner.classList.add('banner2');
+        banner.src = pelicula.Banner;
+
+        tarjeta.appendChild(imagen);
         tarjeta.appendChild(nombrePelicula);
         tarjeta.appendChild(idiomasPelicula);
         tarjeta.appendChild(Estreno);
         tarjeta.appendChild(clasificacion);
         tarjeta.appendChild(duracion);
+        tarjeta.appendChild(sinopsis);
+        tarjeta.appendChild(generoPelicula);
+        tarjeta.appendChild(director);
+        tarjeta.appendChild(actor);
+        tarjeta.appendChild(banner);
 
         columna.appendChild(tarjeta);
         fila2.appendChild(columna);

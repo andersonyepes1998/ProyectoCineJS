@@ -19,8 +19,13 @@
 .cine, img{
     width: 200px;
     cursor: pointer;
+    display: flex;
 }
 
+.menuLineas{
+    width: 28px;
+    margin-right: 20px;
+}
 
 #navbarSupportedContent{
     margin: 0 0 0 5%;
@@ -31,14 +36,53 @@
     height: 38px;
 }
 
+.flechaBlanca{
+    width: 13px;
+    position: absolute;
+    top: 57px;
+    right: 164px;
+}
+
+.flechaBlanca:hover{
+    -webkit-transform: rotate(180deg);
+    transition: 0.5s ease-in-out;
+}
+
+.carrito{
+    width: 30px;
+    position: absolute;
+    top: -3px;
+    right: 10px;
+}
+
+.navCarroCompras{
+    position: absolute;
+    cursor: pointer;
+    right: 30px;
+}
+.navCarroCompras div {
+    width: 16px;
+    height: 16px;
+    background-color: yellow;
+    border-radius: 50%;
+    font-size: var(--sm);
+    font-weight: bold;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -10px;
+  }
+
 #navbar-nav li {
     margin: 0 2%;
 }
 
 .nav-item{
-    padding: 0 5px 0 5px;
+    padding: 0 10px 0 10px;
     background-color: #0076ff;
     border-radius: 13px;
+    font-weight: bold;
 }
 
 .nav-item:hover{
@@ -102,7 +146,6 @@
     font-size: 12px;
     background-color: #ebe5e5;
     padding: 5px;
-    text-align: center;
     border-radius: 3px;
     font-weight: bold;
 }
@@ -287,6 +330,11 @@ footer{
     left: 3px;
 }
 
+.flecha:hover{
+    -webkit-transform: rotate(180deg);
+    transition: 0.5s ease-in-out;
+}
+
 .comerciales2{
     background-color: rgb(251, 248, 248);
     width: 100%;
@@ -330,8 +378,17 @@ footer{
 
 /*stylos a cinema*/
 
+.contenedorSesion{
+    margin-top: 10%;
+}
+
+.containerCenter{
+   display: flex;
+   justify-content: center;
+   justify-items: center;
+}
+
 .factura{
-    position: absolute;
     width: 600px;
     height: 500px;
     /* display: none; */
@@ -407,20 +464,39 @@ label{
     margin: 0 10% 0 10%;
 }
 
-.igmchair{
+.poster{
     display: flex;
-    height: 100px;
-    background-color: rgb(179, 179, 179);
-    margin-bottom: 20px;
+    height: 70px;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 50px;
     justify-content: center;
-    border-radius: 10px;
-    box-shadow: #000;
+    margin: 0 auto;
+    margin-top: 4%;
+    box-shadow: 10px 5px 5px rgb(227, 227, 227);
 }
 
-.igmchair img{
-    margin: 15px 50px 0 50px;
-    width: 70px;
-    height: 70px;
+.poster img{
+    width: 50px;
+    height: 50px;
+}
+
+.posterTexto{
+    position: relative;
+    margin-right: 45px;
+    display: flex;
+    margin-top: 10px;
+}
+
+.posterTexto p {
+    margin-left: 10px;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.pantalla{
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 20px;
 }
 
 /*ESTILOS ALTERNATIVOS*/

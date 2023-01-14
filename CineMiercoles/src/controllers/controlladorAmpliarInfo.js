@@ -36,9 +36,10 @@ bannerImg.src=banner;
 
 
 const comerciales2 = document.getElementById('comerciales2');
-const flecha = document.getElementById('flecha');
+const circulo = document.getElementById('circulo');
+const giro = document.getElementById('flecha');
 
-flecha.addEventListener('click', toggleComerciales);
+circulo.addEventListener('click', toggleComerciales);
 
 function toggleComerciales(){
     comerciales2.classList.toggle('inactive');
@@ -86,5 +87,6 @@ const flecha6 = document.getElementById('flecha6');
 flecha6.addEventListener('click', toggleComerciales6);
 
 function toggleComerciales6(){
+    comerciales6.classList.add('flecha');
     comerciales7.classList.toggle('inactive');
 }

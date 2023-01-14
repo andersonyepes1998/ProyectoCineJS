@@ -9,6 +9,7 @@ export let peliculas2=[
         idioma: "Es subtitulado",
         Director: "Marlon moreno",
         Actores:["Kate McKinnon ", "Dwayne Johnson ", "Kevin Hart. "],
+        Banner:"https://firebasestorage.googleapis.com/v0/b/cineayb.appspot.com/o/banner%20bonnie.jpg?alt=media&token=dbe464a2-bb79-4e94-8a53-f0f3ca2255f2",
         Estreno:"26-Dic-2022" 
     },
     {

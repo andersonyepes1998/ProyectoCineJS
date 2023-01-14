@@ -11,19 +11,53 @@
 </head>
 <body>
     
-    <header>
-        
+  <header>
+    <nav class="navbar navbar-expand-lg fixed-top animate__animated animate__pulse">
+        <div class="container-fluid">
+            <div class="cine"> 
+              <img src="/CineMiercoles/icon_menu.svg" alt="menu" class="menuLineas">
+              <img src="/CineMiercoles/cine_colombia-01.png" alt="logo">
+            </div> 
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto " id="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link text-white" aria-current="page" href="/CineMiercoles/index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="/CineMiercoles/pronto.html">Pronto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="/CineMiercoles/cineAlternativo.html">Alternativo</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="/CineMiercoles/comidas.html">Comidas</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2 " type="search" placeholder="Buscar" aria-label="Search" id="input">
+              <button class="btn btn-outline-primary" type="submit">Buscar</button>
+            </form>
+            <div>
+              <img src="/CineMiercoles/flechitaBlanca-01.svg" alt="blanca"class="flechaBlanca">
+              <img src="/CineMiercoles/LOGUIN-01.svg" alt="loguin" class="loguin">
+            </div>
+              <li class="navCarroCompras">
+                <img src="/CineMiercoles/icon_shopping_cart-01.svg" alt="carrito"     class="carrito">
+                  <div id="dinamico">0</div>
+              </li>
+          </div>
+        </div>
+      </nav>
     </header>
 
-    <main>
-            <div class="container my-3 ">
+    <main class="contenedorSesion">
+            <div class="container containerCenter">
                 <div class="row">
-                    <div class="col-12 col-md-6" id="salaCinema">
-                        <div class="igmchair">
-                            <img src="/CineMiercoles/assets/img/cinema-chair.png" alt="primera1">
-                            <img src="/CineMiercoles/assets/img/cinema-chair-verde.png" alt="">
-                            <img src="/CineMiercoles/assets/img/cinema-chair-rojo.png" alt="">
-                        </div>
+                    <div class="col-12 col-md-5">
+                        <p>PELICULAS</p>
                     </div>
                     <div class="col-12 col-md-6 border-start border-5 ">
                         <section class="factura">
@@ -46,24 +80,57 @@
                     
                 </div>
 
-                <div class="botones">
-                    <a type="button" class="btn btn-dark mt-4" id="validar">Validar Reserva</a>
-                    <a href="../../comidas.html" class="btn btn-dark mt-4" id="seguir">Siguiente</a>
-                    <a type="button" class="btn btn-dark mt-4" id="pago">Pagar</a>
+                <div class="botones border-start border-5">
+                    
                 </div>
             </div>
-
         </div>
 
-    </main>
+        
+          <div class="poster"  >
+              <div class="posterTexto" id="filaCaras">
+                <img src="https://firebasestorage.googleapis.com/v0/b/cineayb.appspot.com/o/SILLASNEGRA-01.svg?alt=media&token=681f3af5-0dc4-49c2-9ebc-8acf25d64839" alt="primera1">
+                  <p>DISPONIBLE</p>
+              </div>
+           
+                <div class="posterTexto">
+                  <img src="https://firebasestorage.googleapis.com/v0/b/cineayb.appspot.com/o/SILLASRESERVADA-01.svg?alt=media&token=147996f3-02d7-4b6f-9088-7a340a3817f4" alt="">
+                    <p>TU ASIENTO</p>
+                </div>
 
-    <footer>
-        <div class="container">
-            <div class="col-12 col-md-5 bloque">
-                <h3 class="pantalla">Pantalla</h3>
+              <div class="posterTexto">
+                <img src="https://firebasestorage.googleapis.com/v0/b/cineayb.appspot.com/o/SILLASOCUPADA-01.svg?alt=media&token=4c8bc6d0-cd5b-42c0-93ca-de9dc1340b69" alt="">
+                  <p>NO DISPONIBLE</p>
+              </div>
+          </div>
+
+          <div class="containerPantalla">
+              <img src="/CineMiercoles/PANTALLA.svg" alt="pantalla" class="pantalla">
+          </div>
+
+          <div class="container"> 
+            <div class="row">
+              <div class="container my-5">
+                <div class="col-12 col-md-4" id="salaCinema">
+                              
+                </div>
+                
+              </div>
+              
             </div>
+            <div class="col-12 col-md-5" id="salaCinema">
+                              
+            </div>
+          </div>
+            
+          <div class="container my-5"></div>
+          <div class="botones">
+            <a type="button" class="btn btn-dark mt-4" id="validar">Validar Reserva</a>
+            <a href="../../comidas.html" class="btn btn-dark mt-4" id="seguir">Siguiente</a>
+            <a type="button" class="btn btn-dark mt-4" id="pago">Pagar</a>
         </div>
-    </footer>
+
+      </main>
 
     <script src="../controllers/controladorsalacinema.js" type="module"></script>
 

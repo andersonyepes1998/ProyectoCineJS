@@ -17,9 +17,9 @@ asientos.forEach(function(hilera){
             fotoSilla.setAttribute('id',asiento.id);
 
                 if(asiento.estado==0){
-                    fotoSilla.src='../../assets/img/cinema-chair.png';
+                    fotoSilla.src='https://firebasestorage.googleapis.com/v0/b/cineayb.appspot.com/o/SILLASNEGRA-01.svg?alt=media&token=681f3af5-0dc4-49c2-9ebc-8acf25d64839';
                 }else if(asiento.estado==2){
-                    fotoSilla.src='../../assets/img/cinema-chair-rojo.png';
+                    fotoSilla.src='https://firebasestorage.googleapis.com/v0/b/cineayb.appspot.com/o/SILLASOCUPADA-01.svg?alt=media&token=4c8bc6d0-cd5b-42c0-93ca-de9dc1340b69';
                 }
 
             //padres e hijos
@@ -31,6 +31,8 @@ asientos.forEach(function(hilera){
     
     cinema.appendChild(fila);
 })
+
+    
 /*
 localStorage.setItem('pintarasientos',JSON.stringify(pintarasientos));
 
